@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+li,ul{
+    list-style: none;
+}
+/* 공통클래스 */
+.h100{
+    height: 100px;
+}
+.h200{
+    height: 200px;
+}
+.h300{
+    height: 300px;
+}
+.w-100{
+    width: 100px;
+}
+.container{
+    width: 1000px
+
+}
+
+.d-flex{
+    display: flex;
+}
+.jcb{
+    justify-content: space-between;
+}
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+
+#hd{
+    background-color: #ccc;
+    align-items: center;
+}
+/*대메뉴*/
+.d1a{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+    min-width:100px;
+    padding: 0 15px;
+}
+
+/* 소메뉴 */
+#gnb{
+    padding: 15px;
+}
+#gnb ul{
+    background-color: #333;
+    font-size: 18px;
+    text-align:center;
+    width: 100px;
+    top: 100%;
+    left:0;
+    text-indent: 1rem;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 1000;
+    margin-top: 27px;
+}
+
+#gnb ul a{
+    color: white;
+}
+.d2ul li:hover{
+    background-color: pink;
+}
+
+/* A */
+#gnb > li:hover ul{
+    height: 7rem;
+}
+
+/* B + C */
+/* #gnb:hover ul{
+    height: 7rem;
+} */
+
+#gnb:after{
+    content:"";
+    position: absolute;
+    background-color: black;
+    left: 0; top: 100%; right: 0;
+    height: 7rem;
+    transition: 0.5s;
+}
+#gnb:hover:after{
+    height: 7rem;
+}
+
+/* slide */
+/* #content, .ani > div{
+    width: 800px;
+}
+#banner{
+    overflow: hidden;
+    height: 350px;
+}
+.ani{
+    width: 1000000px;
+}
+.ani > div{
+    height: 350px;
+}
+.b2{
+    background-color: yellow;
+} */
+
+/* fade */
+#content, .ani > div{
+    width: 800px;
+}
+.ani{
+    width: 1000000px;
+}
+.ani > div{
+    height: 350px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.on{
+    opacity: 1 !important;
+}
+#banner{
+    overflow: hidden;
+    height: 350px;
+}
+
+.b1{
+    background-color: red;
+}
+.b2{
+    background-color: yellow;
+}
