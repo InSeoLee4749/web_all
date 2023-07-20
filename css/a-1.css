@@ -69,18 +69,24 @@ li,ul{
 .d1a{
     font-size: 22px;
     font-weight: bold;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    
+
+    /* text-align: center;
     line-height: 2;
     min-width:100px;
-    padding: 0 15px;
+    padding: 0 15px; */
 }
+
 .d1li:hover{
     background-color: pink
 }
-
 /* 소메뉴 */
 #gnb{
-    padding: 0 1rem;
+    padding: 0 3rem;
 }
 #gnb ul{
     background-color: black;
@@ -92,11 +98,14 @@ li,ul{
     text-indent: 1rem;
     height: 0;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     transition: 0.5s;
     z-index: 1000;
+}
+
+.d2ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #gnb ul a{
@@ -147,10 +156,10 @@ li,ul{
 
 
 /* content-c */
-#c{
+.threediv{
     height: 200px;
 }
-.c-tab{
+.tab2{
     width: 400px;
 }
 .c-banner{
@@ -160,8 +169,8 @@ li,ul{
     width: 400px;
 }
 
-/* content-c tab */
-.c-tab li .abs{
+/* tab */
+.tab2 li .abs{
     left: 0;
     top: 100%;
     right: 0;
@@ -191,11 +200,11 @@ li,ul{
 
 /* pop */
 .pop{
-    width: 150px;
-    height: 150px;
+    width: 400px;
+    height: 300px;
     background-color: white;
     border: 1px solid #ccc;
-    left: 0; right: 0; top: 0; bottom: 0;
+    left:0; right:0; top:0; bottom:0;
     margin: auto;
     z-index: 10000;
     display: none;
@@ -203,7 +212,17 @@ li,ul{
 .pop.show{
     display: block;
 }
-.pop_ment{
+
+.modal h1{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal p{
+    margin-top: 5px;
+}
+.btn{
     
 }
 

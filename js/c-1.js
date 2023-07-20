@@ -18,12 +18,17 @@ $(function(){
     setInterval(function(){
         count++;
         count %=3;
-
         $(".ani > div").eq(count).addClass("on").siblings().removeClass("on")
-
     }, 3000)
 
-    $("notice li").eq(0).click(function(){
+    // tab 
+    $(".tab2 h2").click(function(){
+        $(this).parent("li").addClass('act').siblings().removeClass('act')
+    })
+
+
+    // pop
+    $(".notice li").eq(0).click(function(){
         $(".pop").addClass('show')
     })
     $(".pop button").click(function(){

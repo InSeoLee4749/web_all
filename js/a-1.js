@@ -24,7 +24,7 @@ $(function(){
     }, 3000)
 
     // content tab 부분
-    $(".c-tab h2").click(function(){
+    $(".tab2 h2").click(function(){
         $(this).parent("li").addClass('act').siblings().removeClass('act')
     })
 
