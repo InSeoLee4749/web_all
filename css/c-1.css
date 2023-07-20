@@ -10,6 +10,18 @@ li,ul{
     list-style: none;
 }
 /* 공통클래스 */
+.ofh{
+    overflow: hidden;
+}
+.w-1{
+    width: 33.3333%;
+}
+.w-2{
+    width: 66.6666%;
+}
+.w-h{
+    width: 50%;
+}
 .h100{
     height: 100px;
 }
@@ -24,7 +36,6 @@ li,ul{
 }
 .container{
     width: 1000px
-
 }
 
 .d-flex{
@@ -105,24 +116,6 @@ li,ul{
     height: 7rem;
 }
 
-/* slide */
-/* #content, .ani > div{
-    width: 800px;
-}
-#banner{
-    overflow: hidden;
-    height: 350px;
-}
-.ani{
-    width: 1000000px;
-}
-.ani > div{
-    height: 350px;
-}
-.b2{
-    background-color: yellow;
-} */
-
 /* fade */
 #content, .ani > div{
     width: 800px;
@@ -151,4 +144,24 @@ li,ul{
 }
 .b2{
     background-color: yellow;
+}
+
+/* tab  */
+.threediv{
+    height: 200px;
+}
+
+/* pop */
+.pop{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid #ccc;
+    left: 0; right: 0; top: 0; bottom: 0;
+    margin: auto;
+    z-index: 10000;
+    display: none;
+}
+.pop.show{
+    display: block;
 }

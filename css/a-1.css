@@ -10,6 +10,23 @@ li,ul{
     list-style: none;
 }
 /* 공통클래스 */
+/* D,E유형 calc 사용 */
+/* header#hd{
+    width: 200px;
+} */
+/* #content , .ani > div{
+    width: calc(100% - 200px)} */
+
+.w-1{
+    width: 33.3333%;
+}
+.w-2{
+    width: 66.6666%;
+}
+.w-h{
+    width: 50%;
+}
+
 .h100{
     height: 100px;
 }
@@ -40,11 +57,15 @@ li,ul{
     position: absolute;
 }
 
+/* hd */
+.hd_logo{
+    padding-left: 13px;
+}
 #hd{
     background-color: #ccc;
     align-items: center;
 }
-/*  */
+/*대메뉴  */
 .d1a{
     font-size: 22px;
     font-weight: bold;
@@ -62,7 +83,7 @@ li,ul{
     padding: 0 1rem;
 }
 #gnb ul{
-    background-color: #333;
+    background-color: black;
     font-size: 18px;
     text-align:center;
     width: 100px;
@@ -95,7 +116,8 @@ li,ul{
     height: 7rem;
 }
 
-#gnb:after{
+/* slide 위에 가상선택자 나오는 것 */
+/* #gnb:after{
     content:"";
     position: absolute;
     background-color: black;
@@ -106,7 +128,7 @@ li,ul{
 
 #gnb:hover:after{
     height: 7rem;
-}
+} */
 
 /* slide */
 #content , .ani > div{
@@ -122,11 +144,13 @@ li,ul{
 .ani > div{
     height: 300px;
 }
+
+
 /* content-c */
 #c{
     height: 200px;
 }
-.c-notice{
+.c-tab{
     width: 400px;
 }
 .c-banner{
@@ -135,6 +159,55 @@ li,ul{
 .c-direct{
     width: 400px;
 }
+
+/* content-c tab */
+.c-tab li .abs{
+    left: 0;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    height: 160px;
+}
+.act h2{
+    color: red;
+}
+.act ul{
+    z-index: 10000;
+}
+/* 공지사항 */
+.notice ul{ 
+    padding: 0 10px;
+}
+.notice ul li{
+    padding: 8px 10px;
+}
+.notice li span {float:right;}
+/* 갤러리 */
+.gallery ul{
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* pop */
+.pop{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid #ccc;
+    left: 0; right: 0; top: 0; bottom: 0;
+    margin: auto;
+    z-index: 10000;
+    display: none;
+}
+.pop.show{
+    display: block;
+}
+.pop_ment{
+    
+}
+
+
 /* footer */
 #footer{
     height: 100px;

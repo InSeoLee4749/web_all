@@ -22,5 +22,12 @@ $(function(){
         $(".ani > div").eq(count).addClass("on").siblings().removeClass("on")
 
     }, 3000)
+
+    $("notice li").eq(0).click(function(){
+        $(".pop").addClass('show')
+    })
+    $(".pop button").click(function(){
+        $(".pop").removeClass('show')
+    })
     
 })
