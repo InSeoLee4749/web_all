@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+li,ul{
+    list-style: none;
+}
+/* 공통클래스 */
+/* D,E유형 calc 사용 */
+/* header#hd{
+    width: 200px;
+} */
+/* #content , .ani > div{
+    width: calc(100% - 200px)} */
+
+.w-1{
+    width: 33.3333%;
+}
+.w-2{
+    width: 66.6666%;
+}
+.w-h{
+    width: 50%;
+}
+
+.h100{
+    height: 100px;
+}
+.h200{
+    height: 200px;
+}
+.h300{
+    height: 300px;
+}
+.w-100{
+    width: 100px;
+}
+.container{
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+.jcb{
+    justify-content: space-between;
+}
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+.ofh{
+    overflow: hidden;
+}
+
+.w-gnb{
+    padding: 3px;
+}
+/* 로고 */
+.logo img{
+    height: 80px;
+    width: 200px;
+}
+
+/* 대메뉴 */
+.d1a{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+
+    border: 1px solid;
+    padding: 1px;
+    margin-top: 2px;
+}
+
+/* 소메뉴 */
+#hd{
+    height: 850px;
+}
+#gnb{
+    width: 200px;
+}
+.d2ul{
+    background-color: #333;
+    font-size: 18px;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 100000;
+    height: 0;
+    
+}
+.d2ul a{
+    color: white;
+    
+}
+/* 엄마한테 손올리기 */
+.d1li:hover ul{
+    height: 7rem;
+}
+.d1a:hover{
+    background-color: pink;
+}
+.d2ul li:hover{
+    background-color: pink;
+}
+/* content */
+.content{
+    width: calc(100% - 200px)
+}
+
+/* slide */
+#slide{
+    height: 400px;
+}
+#slide img{
+    width: 100%;
+    height: 400px;
+}
+.swiper-wrapper{
+    height: 100000000px;
+}
+
+/* banner */
+#banner{
+    height: 200px;
+}
+#banner img{
+    width: 100%;
+    height: 200px;
+}
+
+/* 2tab */
+#twotab{
+    height: 250px;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+#twotab h2{
+    padding: 0 15px;
+}
+#twotab ul{
+
+}
+.act h2{
+    color: red;
+    border : 1px solid #ccc;
+    border-bottom-color: white;
+    position: relative;
+    z-index: 1000;
+}
+.act ul{
+    z-index: 10000;
+}
+#twotab li .abs{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    background-color: white;
+    height: 160px;
+    padding:15px;
+    border:1px solid #ccc;
+    box-sizing: border-box ;
+}
+#twotab li .abs li{
+    padding: 7px 0;
+}
+/* 공지사항 */
+
+/* footer */
+.f-logo{
+    width: 200px;
+    height: 100px;
+}
+.f-ment{
+    height: 100px;
+    width: 100%;
+}
+.f-sns{
+    height: 100px;
+    width: 200px;
+}
+
+/* quick */
+#quick{
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 15px;
+
+}

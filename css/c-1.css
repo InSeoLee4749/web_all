@@ -84,16 +84,16 @@ li,ul{
 #gnb ul{
     background-color: #333;
     font-size: 18px;
-    text-align:center;
+    text-align: center;
     top: 100%;
-    left:0;
-    height: 0;
-    overflow: hidden;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
     transition: 0.5s;
-    z-index: 1000;
+    z-index: 100000;
+    height: 0;
 }
 
 #gnb ul a{
@@ -103,12 +103,12 @@ li,ul{
     background-color: pink;
 }
 
-/* A */
+/* A 엄마*/
 #gnb > li:hover ul{
     height: 7rem;
 }
 
-/* B + C */
+/* B + C 사장나오라고해*/
 /* #gnb:hover ul{
     height: 7rem;
 } */
@@ -166,6 +166,7 @@ li,ul{
 .direct{
     width: 200px;
 }
+
 .act h2{
     color: red;
 }
