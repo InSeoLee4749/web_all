@@ -1,3 +1,12 @@
+
+/* 공통클래스 */
+/* D,E유형 calc 사용 */
+/* header#hd{
+    width: 200px;
+} */
+/* #content , .ani > div{
+    width: calc(100% - 200px)} */
+
 *{
     margin: 0;
     padding: 0;
@@ -81,6 +90,7 @@ li, ul{
 .d1li:hover{
     background-color: rgb(214, 195, 233);
 }
+
 /* 소메뉴 */
 .d2ul{
     background-color: #333;
@@ -100,13 +110,48 @@ li, ul{
     justify-content: center;
     align-items: center;
 }
+
+
 /* 가려진 ul을 다시 보이게 하다!! */
+/* B + C 사장님나오라고해,할머니*/
 #gnb:hover ul{
     height: 6rem;
 }
+#gnb:after{
+   content: "";
+   position: absolute;
+   left:0; right:0; top:100%;
+   height: 0;
+   transition: 0.5s;
+   background-color: black;
+}
+
+#gnb:hover:after{
+    height: 6rem;
+}
+
+
+/* A 엄마*/
+/* #gnb > li:hover ul{
+    height: 7rem;
+} */
 .d2ul li:hover{
     background-color:rgb(214, 195, 233);
 }
+/* slide 위에 가상선택자 나오는 것 */
+/* #gnb:after{
+    content:"";
+    position: absolute;
+    background-color: black;
+    left: 0; top: 100%; right: 0;
+    height: 7rem;
+    transition: 0.5s;
+}
+
+#gnb:hover:after{
+    height: 7rem;
+} */
+
 
 /* swiper */
 #swiper{
