@@ -1,14 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-a{
-    text-decoration: none;
-    color: #333;
-}
-li,ul{
-    list-style: none;
-}
+
 /* 공통클래스 */
 /* D,E유형 calc 사용 */
 /* header#hd{
@@ -17,14 +7,21 @@ li,ul{
 /* #content , .ani > div{
     width: calc(100% - 200px)} */
 
-.w-1{
-    width: 33.3333%;
+*{
+    margin: 0;
+    padding: 0;
 }
-.w-2{
-    width: 66.6666%;
+a{
+    text-decoration: none;
+    color: #333;
 }
-.w-h{
-    width: 50%;
+li, ul{
+    list-style: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .h100{
@@ -36,16 +33,29 @@ li,ul{
 .h300{
     height: 300px;
 }
+.w-h{
+    width: 50%;
+}
+.w-1{
+    width: 33.3333%;
+}
+.w-2{
+    width: 66.6666%;
+}
 .w-100{
-    width: 100px;
+    width: 100%;
 }
-.container{
-    width: 1200px;
-    margin: 0 auto;
-}
-
 .d-flex{
     display: flex;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.ofh{
+    overflow: hidden;
 }
 .jcb{
     justify-content: space-between;
@@ -58,73 +68,63 @@ li,ul{
 }
 
 /* hd */
-.hd_logo{
-    padding-left: 13px;
-}
 #hd{
-    background-color: #ccc;
+    background-color: blueviolet;
     align-items: center;
 }
-/*대메뉴  */
+#gnb{
+    padding: 0 3rem;
+    margin-top: 10px;
+}
+.logo{
+    margin-top: 5px;
+}
+/* 대메뉴 */
 .d1a{
     font-size: 22px;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    
-
-    /* text-align: center;
-    line-height: 2;
-    min-width:100px;
-    padding: 0 15px; */
+    text-align: center;
+    color: white;
+    min-width: 100px;
 }
-
 .d1li:hover{
-    background-color: pink
+    background-color: rgb(214, 195, 233);
 }
+
 /* 소메뉴 */
-#gnb{
-    padding: 0 3rem;
-}
-#gnb ul{
-    background-color: black;
+.d2ul{
+    background-color: #333;
     font-size: 18px;
-    text-align:center;
-    width: 100px;
+    text-align: center;
+    width: 100%;
     top: 100%;
-    left:0;
-    text-indent: 1rem;
+    left: 0;
     height: 0;
     overflow: hidden;
     transition: 0.5s;
     z-index: 1000;
 }
-
 .d2ul li a{
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#gnb ul a{
-    color: white;
-}
-.d2ul li:hover{
-    background-color: pink;
+
+/* 가려진 ul을 다시 보이게 하다!! */
+/* B + C 사장님나오라고해,할머니*/
+#gnb:hover ul{
+    height: 6rem;
 }
 
 /* A 엄마*/
 /* #gnb > li:hover ul{
     height: 7rem;
 } */
-
-/* B + C 사장님나오라고해,할머니*/
-#gnb:hover ul{
-    height: 7rem;
+.d2ul li:hover{
+    background-color:rgb(214, 195, 233);
 }
-
 /* slide 위에 가상선택자 나오는 것 */
 /* #gnb:after{
     content:"";
@@ -139,38 +139,30 @@ li,ul{
     height: 7rem;
 } */
 
-/* slide */
-#content , .ani > div{
-    width: 1200px;
-}
-#banner{
-    overflow: hidden;
+
+/* swiper */
+#swiper{
     height: 300px;
 }
-.ani{
+.swiper-wrapper{
     width: 10000px;
 }
-.ani > div{
-    height: 300px;
-}
 
-
-/* content-c */
+/* threediv */
 .threediv{
     height: 200px;
 }
-.tab2{
+#tab2{
     width: 400px;
 }
-.c-banner{
+#banner{
     width: 400px;
 }
-.c-direct{
+#direct{
     width: 400px;
 }
-
-/* tab */
-.tab2 li .abs{
+/* tab2 */
+#tab2 li .abs{
     left: 0;
     top: 100%;
     right: 0;
@@ -185,34 +177,43 @@ li,ul{
     z-index: 10000;
 }
 /* 공지사항 */
-.notice ul{ 
+.notice ul{
     padding: 0 10px;
 }
 .notice ul li{
     padding: 8px 10px;
 }
-.notice li span {float:right;}
+.notice li span{
+    float: right;
+}
 /* 갤러리 */
 .gallery ul{
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
-/* pop */
+/* footer */
+#footer{
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+}
+/* popup */
 .pop{
     width: 400px;
     height: 300px;
     background-color: white;
     border: 1px solid #ccc;
-    left:0; right:0; top:0; bottom:0;
+    left: 0; right: 0; top: 0; bottom: 0;
     margin: auto;
-    z-index: 10000;
+    z-index: 100000;
     display: none;
 }
 .pop.show{
     display: block;
 }
-
 .modal h1{
     font-size: 18px;
     display: flex;
@@ -221,16 +222,4 @@ li,ul{
 }
 .modal p{
     margin-top: 5px;
-}
-.btn{
-    
-}
-
-
-/* footer */
-#footer{
-    height: 100px;
-    background-color: #727272;
-    padding: 0 1rem;
-    align-items: center;
 }
